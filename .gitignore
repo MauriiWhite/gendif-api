@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Caches
+*.pyc
+
+# Virtual environment
+venv/
+
+# Ignore Django migration files
+**/migrations/
+
+# Ignore database configuration
+db.sqlite3
+
+# Ignore development and runtime folders
+.media/
+staticfiles/
+
+# Ignore pycache directories
+__pycache__/
+
+
+
