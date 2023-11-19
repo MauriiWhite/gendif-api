@@ -15,7 +15,6 @@ git clone https://github.com/MauriiWhite/gendif-api.git
 pip install -r requirements.txt
 python manage.py createsuperuser
 python manage.py migrate
-python manage.py runserver
 ```
 
 ## Antes de correr el servidor es necesario hacer lo siguiente:
@@ -30,7 +29,7 @@ CLOUDINARY_API_SECRET= *Tu APISECRET de Cloudinary*
 Servicio de imágenes: [Cloudinary](https://cloudinary.com/)
 
 
-En el del archivo **constants.py** dentro de la carpeta de **/api** completa lo siguiente:
+En el archivo **constants.py** dentro de la carpeta de **/api** completa lo siguiente:
 ```python
 DEFAULT_PROFILE = ""
 DEFAULT_PROFILE_URL = 
@@ -43,11 +42,14 @@ Todos los campos deben de ser de tipo **string**.
 
 Un ejemplo de uso es el siguiente:
 ```python
-DEFAULT_PROFILE = "default/picture.png"
-DEFAULT_PROFILE_URL = "https://res.cloudinary.com/.../image/upload/.../default/picture.png"
+DEFAULT_PROFILE = "default/profile.png"
+DEFAULT_PROFILE_URL = "https://res.cloudinary.com/.../image/upload/.../default/profile.png"
 
 DEFAULT_SUBGROUP = "default/subgroup.jpg"
 DEFAULT_SUBGROUP_URL = "https://res.cloudinary.com/.../image/upload/.../default/subgroup.jpg"
+
+DEFAULT_EVENT = "default/event.jpg"
+DEFAULT_EVENT_URL = "https://res.cloudinary.com/.../image/upload/.../default/event.jpg"
 ```
 Cabe destacar que debes de extraer la URL de tu imagen dentro del dashboard de Cloudinary y tener 3 archivos
 de imágenes diferentes, tanto para profile, subgroup y event.
