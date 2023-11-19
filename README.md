@@ -41,7 +41,7 @@ DEFAULT_EVENT_URL = ""
 ```
 Todos los campos deben de ser de tipo **string**.
 
-Un ejemplo de se su uso es el siguiente:
+Un ejemplo de uso es el siguiente:
 ```python
 DEFAULT_PROFILE = "default/picture.png"
 DEFAULT_PROFILE_URL = "https://res.cloudinary.com/.../image/upload/.../default/picture.png"
@@ -52,7 +52,12 @@ DEFAULT_SUBGROUP_URL = "https://res.cloudinary.com/.../image/upload/.../default/
 Cabe destacar que debes de extraer la URL de tu imagen dentro del dashboard de Cloudinary y tener 3 archivos
 de imágenes diferentes, tanto para profile, subgroup y event.
 
-¡Enhorabuena!
+Por último, ejecuta el servidor:
+```bash
+python manage.py runserver
+```
+
+**¡Enhorabuena!**
 
 
 
